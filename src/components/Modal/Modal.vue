@@ -53,7 +53,6 @@
             autocorrect="off"
             type="text"
             placeholder="Name"
-            aria-label="Name"
           />
           <input
             id="email"
@@ -64,7 +63,6 @@
             spellcheck="false"
             type="text"
             placeholder="Email"
-            aria-label="Email"
           />
           <input value="Submit" type="submit" />
           <div class="terms-input">
