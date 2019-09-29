@@ -114,7 +114,8 @@ export default {
   padding: 8rem 0;
   width: 100%;
   background-color: $overlay;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-content {

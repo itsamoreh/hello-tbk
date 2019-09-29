@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="{ modalShown: modalShown }">
     <header class="site-header"><div>Header</div></header>
     <main class="site-main">
       <h1>Popup Modal Challenge</h1>
@@ -7,6 +7,9 @@
         This is my submission for the popup modal challenge. The submission is a
         vue app started using vue cli's <code>vue create</code> command. I used
         a custom preset with Yarn, Babel, ESLint + Prettier, and node-sass.
+        <a href="https://github.com/itsamoreh/hello-tbk"
+          >You can download the code at Github.</a
+        >
       </p>
       <p>
         After the site loads, wait three seconds and the popup modal will
@@ -21,10 +24,15 @@
         <li>macOS - Firefox</li>
         <li>iOS - Chrome</li>
         <li>iOS - Safari</li>
+        <li>Windows - Chrome</li>
+        <li>Windows - Firefox</li>
       </ul>
       <h2>Known Issues</h2>
       <ul>
-        <li>Scrolling the modal is a little weird on iOS</li>
+        <li>
+          Fonts might not match (I don't have photoshop or Typekit, I was using
+          Affinity Photo to view the mockup)
+        </li>
       </ul>
     </main>
     <footer class="site-footer"><div>Footer</div></footer>
@@ -76,6 +84,11 @@ export default {
 #app {
   min-height: 100vh;
   position: relative;
+
+  &.modalShown {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .site-header {
