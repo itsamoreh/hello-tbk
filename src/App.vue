@@ -64,14 +64,6 @@ export default {
       localStorage.modalDismissed = true;
       this.modalShown = false;
     }
-  },
-  computed: {
-    modalInfo() {
-      if (localStorage.modalDismissed && !this.modalShown) {
-        return "Modal has been dismissed.";
-      }
-      return "Please wait for modal.";
-    }
   }
 };
 </script>
@@ -80,7 +72,6 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap");
 @import "./scss/variables.scss";
 @import "./scss/global.scss";
-@import "./scss/transitions.scss";
 
 #app {
   min-height: 100vh;
@@ -95,7 +86,6 @@ export default {
   padding: 0 2rem;
   width: 100%;
   height: 4rem;
-
   background: $accent-color;
   color: $bg-color;
 }

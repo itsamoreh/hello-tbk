@@ -1,0 +1,82 @@
+input[type="text"] {
+  margin-bottom: $spacing-xs;
+  margin-right: $spacing-xs / 2;
+  padding: 0 $spacing-xs;
+  height: 40px;
+  border: 0;
+  border-bottom: 2px solid lighten($accent-color, 15%);
+  font-size: 16px;
+}
+
+button,
+input[type="submit"] {
+  margin-bottom: $spacing-xs;
+  padding: 0 $spacing-xs;
+  height: 42px;
+  border: 0;
+  background-color: $black;
+  color: $text-light;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  // source: https://www.456bereastreet.com/archive/201211/accessible_custom_checkboxes_and_radio_buttons/
+
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  & + label:before {
+    content: "";
+    margin-left: -24px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid $white;
+  }
+
+  &:hover + label:before {
+    background: lighten($accent-color, 15%);
+  }
+
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px lighten($accent-color, 15%);
+  }
+
+  &:checked + label:before {
+    background: transparent;
+  }
+
+  &:checked + label:after {
+    content: "";
+    position: absolute;
+    left: -21px;
+    top: 8px;
+    background: $white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 $white, 4px 0 0 $white, 4px -2px 0 $white,
+      4px -4px 0 $white, 4px -6px 0 $white, 4px -8px 0 $white;
+    transform: rotate(45deg);
+  }
+}
+
+::placeholder {
+  color: $text-dark;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lighten($accent-color, 15%) !important;
+}

@@ -1,0 +1,14 @@
+.text-subtitle {
+  margin: 0 auto $spacing-sm auto;
+  padding: 0 $spacing-xs;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: $body-font;
+  font-weight: normal;
+}
+
+.text-accent {
+  color: $accent-color;
+}

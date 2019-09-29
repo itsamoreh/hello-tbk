@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: `hello-tbk`
+  publicPath: process.env.NODE_ENV === "production" ? "/my-project/" : "/"
 };

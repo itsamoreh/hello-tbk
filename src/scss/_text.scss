@@ -1,0 +1,48 @@
+body {
+  font-size: 18px;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto;
+  font-family: $heading-font;
+  line-height: 0.95;
+}
+
+h1,
+.h1 {
+  margin: 0 auto $spacing-md auto;
+  padding: 0 $spacing-xs;
+  font-size: 70px;
+
+  @include for-phone-only {
+    font-size: 45px;
+  }
+}
+
+h2,
+.h2 {
+  margin: 0 auto $spacing-sm auto;
+  padding: 0 $spacing-xs;
+  font-size: 30px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: $spacing-sm;
+  padding: 0 $spacing-xs;
+  font-size: 18px;
+}
+
+code {
+  font-size: 18px;
+  background-color: $footer-color;
+}

@@ -3,8 +3,7 @@
     <aside
       class="modal-content"
       role="dialog"
-      aria-labelledby=""
-      aria-describedby=""
+      aria-labelledby="modal-title1 modal-title2"
     >
       <header class="modal-header">
         <button class="modal-dismiss" @click="$emit('dismiss')">
@@ -15,11 +14,11 @@
             src="../../assets/close.svg"
           />
         </button>
-        <h1 class="text-subtitle">
+        <h1 id="modal-title1" class="text-subtitle">
           You are cordially invited to the launch
         </h1>
         <p>of the</p>
-        <h2 class="h1 text-display">
+        <h2 id="modal-title2" class="h1 text-display">
           New <span class="text-accent">company</span> website
         </h2>
         <p>
