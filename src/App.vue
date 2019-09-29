@@ -11,7 +11,7 @@
       <p>
         After the site loads, wait three seconds and the popup modal will
         appear. After dismissing the modal with the "x" button, a value is
-        stored in <code>localStorage</code> to ensure the modial does not open
+        stored in <code>localStorage</code> to ensure the modal does not open
         again unless the user clears the browser cache.
       </p>
       <h2>Tested On</h2>
