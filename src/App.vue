@@ -4,13 +4,13 @@
     <main class="site-main">
       <h1>Popup Modal Challenge</h1>
       <p>
-        This is my submission for the popup modial challenge. The submission is
-        a vue app started using vue cli's <code>vue create</code> command. I
-        used a custom preset with Yarn, Babel, ESLint + Prettier, and node-sass.
+        This is my submission for the popup modal challenge. The submission is a
+        vue app started using vue cli's <code>vue create</code> command. I used
+        a custom preset with Yarn, Babel, ESLint + Prettier, and node-sass.
       </p>
       <p>
-        After the site loads, wait three seconds and the popup modial will
-        appear. After dismissing the modial with the "x" button, a value is
+        After the site loads, wait three seconds and the popup modal will
+        appear. After dismissing the modal with the "x" button, a value is
         stored in <code>localStorage</code> to ensure the modial does not open
         again unless the user clears the browser cache.
       </p>
